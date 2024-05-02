@@ -9,7 +9,7 @@
 </head>
 <body class="bg-slate-100">
     <header class="bg-white shadow px-6">
-        <div class="flex max-w-6xl mx-auto justify-between h-16 items-center">
+        <div class="flex justify-between h-16 items-center">
             <button class="h-8 w-8 text-slate-500 hover:bg-sky-500 hover:text-slate-100 transition rounded">
                 <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -23,8 +23,9 @@
                     </svg>
                 </a>
 
-                <div class="space-x-8 ml-8 hidden sm:flex">
+                <div class="font-semibold space-x-8 ml-8 hidden sm:flex">
                     <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">INICIO</a>
+                    <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">BLOGS</a>
                     <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">NOSOTROS</a>
                     <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">CONTACTO</a>
                 </div>
@@ -42,17 +43,32 @@
 
         <div class="space-y-1 pb-3 border-t py-3 sm:hidden">
             <a href="#" class="block px-3 py-2 rounded-md transition-colors text-slate-700 hover:bg-sky-500 hover:text-white">Inicio</a>
+            <a href="#" class="block px-3 py-2 rounded-md transition-colors text-slate-700 hover:bg-sky-500 hover:text-white">Blogs</a>
             <a href="#" class="block px-3 py-2 rounded-md transition-colors text-slate-700 hover:bg-sky-500 hover:text-white">Nosotros</a>
             <a href="#" class="block px-3 py-2 rounded-md transition-colors text-slate-700 hover:bg-sky-500 hover:text-white">Contacto</a>
         </div>
     </header>
-    <main class="p-4">
-        <article>
-            <div>Header</div>
-            <div>Content</div>
-            <div>Footer</div>
-        </article>
-    </main>
 
+    <main class="grid grid-cols-2 max-w-6xl p-4">
+        <div class="">
+        <article class="bg-white shadow rounded overflow-hidden">
+            <div class="h-full w-full object-cover object-center">
+                <img src="/public/images/article_images/CPUI.jpg" alt="Intel 14th Gen">
+            </div>
+            <div class="space-y-3 p-5">
+                <h3 class="text-sm font-semibold text-sky-500">Intel</h3>
+                <h2 class="text-xl font-semibold text-slate-900 leading-tight">Intel Lanza sus nuevas CPU de 14th Gen</h2>
+                <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, ex.</p>
+            </div>
+            <div class="flex space-x-2 p-5">
+                <img class="h-10 w-10 rounded-full" src="https://ui-avatars.com/api?name=Anthony Rodríguez" alt="Anthony Rodríguez">
+                <div class="flex flex-col justify-center">
+                    <span class="text-sm font-semibold leading-4 text-slate-600">Anthony Rodríguez</span>
+                    <span class="text-sm text-slate-500">17 Oct, 2023</span>
+                </div>
+            </div>
+        </article>
+
+    </main>
 </body>
 </html>
